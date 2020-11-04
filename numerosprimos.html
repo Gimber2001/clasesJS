@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Numeros Primos</title>
+</head>
+<body>
+    <p id="parrafo1"></p>
+</body>
+<script type="text/javascript">
+    var num = prompt("Por Favor Ingrese el numero");
+    var control= 0;
+    for(var i=1; i<=num; i++)
+        {
+            if(num%i==0)
+            {
+                control++;
+            }
+
+        }
+    if (control==2)
+        {
+            document.getElementById("parrafo1").innerHTML = num+ " Es primo ";
+        }
+    else
+    {
+            document.getElementById("parrafo1").innerHTML = num+ " No es primo ";
+    }
+
+
+</script>
+</html>
